@@ -14,7 +14,10 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 
-<body>
+<body class="has-hero"
+      style="--heroImage: url('assets/hero.png');
+             --glowTop: rgba(34,197,94,.14);
+             --glowBottom: rgba(34,197,94,.55);">
 
   <!-- Top Navigation -->
   <header class="topbar">
@@ -52,7 +55,7 @@
     <div class="scrollhint">Scroll ↓</div>
   </section>
 
-  <!-- CONTENT (kommt nach dem Hero) -->
+  <!-- CONTENT -->
   <main class="content">
 
     <section id="services" class="section">
@@ -102,7 +105,7 @@
       </div>
     </section>
 
-    <!-- Bottom Glow Zone (grün, xAI-style) -->
+    <!-- Bottom Glow -->
     <section class="glow-end" aria-hidden="true"></section>
 
   </main>
@@ -114,5 +117,6 @@
   <script>
     document.getElementById("y").textContent = new Date().getFullYear();
   </script>
+
 </body>
 </html>
