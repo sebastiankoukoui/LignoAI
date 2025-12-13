@@ -1,1 +1,62 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kontakt – LignoAI Engineering</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="navbar">
+      <a class="brand" href="index.html"><span class="ligno">Ligno</span><span class="rest">AI Engineering</span></a>
+      <nav class="navlinks">
+        <a data-nav href="index.html">Home</a>
+        <a data-nav href="about.html">Über uns</a>
+        <a data-nav href="references.html">References</a>
+        <a data-nav class="cta" href="contact.html">Kontakt</a>
+      </nav>
+      <button class="burger" data-burger aria-label="Menü öffnen">☰</button>
+    </div>
+    <div class="mobile" data-mobile>
+      <a data-nav href="index.html">Home</a>
+      <a data-nav href="about.html">Über uns</a>
+      <a data-nav href="references.html">References</a>
+      <a data-nav href="contact.html">Kontakt</a>
+    </div>
+  </header>
+
+  <div class="shell">
+    <aside class="sticky">
+      <div class="visual">
+        <div class="visual-top"><div class="pill"><span class="dot"></span> Kontakt</div></div>
+        <div class="visual-img"><img src="assets/hero.jpg" alt="Visual" /></div>
+        <div class="visual-bottom">Schreib kurz, worum es geht – ich antworte schnell.</div>
+      </div>
+    </aside>
+
+    <main class="content">
+      <h1>Kontakt</h1>
+      <p>Am einfachsten per E-Mail:</p>
+      <p>
+        <a class="navlinks cta" style="display:inline-block" href="mailto:hello@lignoai.engineering">
+          hello@lignoai.engineering
+        </a>
+      </p>
+
+      <h2>Was ich für eine Anfrage brauche</h2>
+      <div class="grid">
+        <div class="card"><h3>Use-Case</h3><p>Was soll besser werden? (Qualität, Zeit, Kosten, Vorhersage …)</p></div>
+        <div class="card"><h3>Daten</h3><p>Welche Daten gibt’s? BIM/CAD, Fotos, Sensorik, Logs, Excel …</p></div>
+        <div class="card"><h3>Ziel</h3><p>Wie misst man Erfolg? (KPIs, Fehlerrate, Ausschuss, Stunden …)</p></div>
+        <div class="card"><h3>Zeithorizont</h3><p>PoC (2–6 Wochen) oder Integration (laufend)?</p></div>
+      </div>
+    </main>
+  </div>
+
+  <footer class="footer">© <span id="y"></span> LignoAI Engineering</footer>
+  <script>document.getElementById("y").textContent=new Date().getFullYear();</script>
+  <script src="script.js"></script>
+</body>
+</html>
 
