@@ -189,3 +189,6 @@ p{margin:0 0 12px; color:var(--muted); line-height:1.65;}
   object-fit: cover;
   object-position: center;
 }
+.visual-img {
+  outline: 2px solid red;
+}
