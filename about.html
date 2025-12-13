@@ -6,55 +6,55 @@
   <title>Über uns – LignoAI Engineering</title>
   <link rel="stylesheet" href="style.css" />
 </head>
-<body>
-  <header class="header">
-    <div class="navbar">
+
+<body style="--glowTop: rgba(180,220,255,.18); --glowBottom: rgba(34,197,94,.55);">
+  <header class="topbar">
+    <div class="nav">
       <a class="brand" href="index.html"><span class="ligno">Ligno</span><span class="rest">AI Engineering</span></a>
-      <nav class="navlinks">
-        <a data-nav href="index.html">Home</a>
-        <a data-nav href="about.html">Über uns</a>
-        <a data-nav href="references.html">References</a>
-        <a data-nav class="cta" href="contact.html">Kontakt</a>
+      <nav class="links">
+        <a href="index.html">Home</a>
+        <a class="active" href="about.html">Über uns</a>
+        <a href="references.html">References</a>
+        <a class="cta" href="contact.html">Kontakt</a>
       </nav>
-      <button class="burger" data-burger aria-label="Menü öffnen">☰</button>
-    </div>
-    <div class="mobile" data-mobile>
-      <a data-nav href="index.html">Home</a>
-      <a data-nav href="about.html">Über uns</a>
-      <a data-nav href="references.html">References</a>
-      <a data-nav href="contact.html">Kontakt</a>
     </div>
   </header>
 
-  <div class="shell">
-    <aside class="sticky">
-      <div class="visual">
-        <div class="visual-top"><div class="pill"><span class="dot"></span> About</div></div>
-        <div class="visual-img"><img src="sebastian.jpg" alt="Sebastian Koukoui" /></div>
-        <div class="visual-bottom">Zimmermann EFZ · BSc Holztechnik · Data Science & AI</div>
+  <main class="content" style="padding-top:72px;">
+    <section class="section">
+      <div class="wrap">
+        <h2>Über mich</h2>
+        <p class="sub">
+          Zimmermann EFZ · BSc Holztechnik Student · Fokus auf Data Science, ML & AI im Holzbau.
+        </p>
+        <p>
+          Ich bin <strong>Sebastian Koukoui</strong> (23) und verbinde praktische Holzbau-Erfahrung mit modernen AI-Methoden,
+          um Prozesse messbar zu verbessern.
+        </p>
       </div>
-    </aside>
+    </section>
 
-    <main class="content">
-      <h1>Über uns</h1>
-      <p>
-        Ich bin <strong>Sebastian Koukoui</strong>, gelernter Zimmermann EFZ und Bachelor-Student Holztechnik.
-        Mein Fokus: AI-Implementierung im Holzbau – praxisnah, robust und nachvollziehbar.
-      </p>
-      <h2>Was mich antreibt</h2>
-      <p>
-        Ich will, dass AI im Holzbau nicht „Buzzword“ bleibt, sondern echte Prozesse verbessert:
-        Qualität, Durchlaufzeit, Materialeffizienz und Planungsgenauigkeit.
-      </p>
-      <h2>Arbeitsweise</h2>
-      <p>
-        Kleine Schritte, messbare Ergebnisse: Use-Case → Daten → PoC → Integration → Betrieb.
-      </p>
-    </main>
-  </div>
+    <!-- Foto erst nach Scroll: einfach später platzieren -->
+    <section class="section">
+      <div class="wrap">
+        <h2>Profil</h2>
+        <p class="sub">Ein kurzer Überblick, bevor das Foto kommt.</p>
+
+        <div style="height:22px;"></div>
+
+        <img class="portrait" src="sebastian.jpg" alt="Sebastian Koukoui" />
+
+        <div style="height:10px;"></div>
+        <p>
+          Interesse: AI-Implementierung, Computer Vision, Datenpipelines, Optimierung im Holzingenieurbau.
+        </p>
+      </div>
+    </section>
+
+    <section class="glow-end" aria-hidden="true"></section>
+  </main>
 
   <footer class="footer">© <span id="y"></span> LignoAI Engineering</footer>
   <script>document.getElementById("y").textContent=new Date().getFullYear();</script>
-  <script src="script.js"></script>
 </body>
 </html>
