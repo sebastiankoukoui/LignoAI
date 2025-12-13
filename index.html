@@ -3,16 +3,12 @@
 <head>
   <meta charset="utf-8" />
 
-  <!-- Google Search Console verification (WICHTIG: drin lassen) -->
+  <!-- Google Search Console verification (drin lassen) -->
   <meta name="google-site-verification" content="toAgicao6RYTk-eDJDxdQ3fNRhYl8EZesVz8OhebC98" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-
   <title>LignoAI Engineering – AI im Holzbau</title>
-
-  <meta name="description"
-        content="LignoAI Engineering: Umsetzung von AI-Lösungen für Holzbau & Holzingenieurwesen – von Datenaufbereitung bis Integration in reale Prozesse." />
-
+  <meta name="description" content="LignoAI Engineering: Umsetzung von AI-Lösungen für Holzbau & Holzingenieurwesen – von Daten bis Integration." />
   <meta name="robots" content="index, follow" />
 
   <link rel="stylesheet" href="style.css" />
@@ -20,142 +16,103 @@
 
 <body>
 
-  <!-- ================= HEADER / NAV ================= -->
-  <header class="header">
-    <div class="navbar">
+  <!-- Top Navigation -->
+  <header class="topbar">
+    <div class="nav">
       <a class="brand" href="index.html">
         <span class="ligno">Ligno</span><span class="rest">AI Engineering</span>
       </a>
 
-      <nav class="navlinks">
-        <a data-nav href="index.html">Home</a>
-        <a data-nav href="about.html">Über uns</a>
-        <a data-nav href="references.html">References</a>
-        <a data-nav class="cta" href="contact.html">Kontakt</a>
+      <nav class="links">
+        <a class="active" href="index.html">Home</a>
+        <a href="about.html">Über uns</a>
+        <a href="references.html">References</a>
+        <a class="cta" href="contact.html">Kontakt</a>
       </nav>
-
-      <button class="burger" data-burger aria-label="Menü öffnen">☰</button>
-    </div>
-
-    <!-- Mobile menu -->
-    <div class="mobile" data-mobile>
-      <a data-nav href="index.html">Home</a>
-      <a data-nav href="about.html">Über uns</a>
-      <a data-nav href="references.html">References</a>
-      <a data-nav href="contact.html">Kontakt</a>
     </div>
   </header>
 
-  <!-- ================= MAIN LAYOUT ================= -->
-  <div class="shell">
-
-    <!-- ===== Sticky Visual (bleibt beim Scrollen stehen) ===== -->
-    <aside class="sticky">
-      <div class="visual">
-
-        <div class="visual-top">
-          <div class="pill">
-            <span class="dot"></span>
-            Holzbau × KI • LignoAI
-          </div>
-        </div>
-
-        <div class="visual-img">
-       
-          <img src="assets/hero.png" alt="LignoAI Engineering – AI im Holzbau" />
-        </div>
-
-        <div class="visual-bottom">
-          <strong style="color: rgba(255,255,255,.9);">
-            AI-Engineering für den Holzbau
-          </strong><br/>
-          Von Datenaufbereitung über Modellierung bis zur Integration in Planung,
-          Produktion und Qualitätssicherung.
-        </div>
-
-      </div>
-    </aside>
-
-    <!-- ===== Scroll-Content rechts ===== -->
-    <main class="content">
-
-      <h1>
-        <span style="color: var(--green);">Ligno</span>AI Engineering
-      </h1>
-
-      <p class="kicker">
-        Wir bringen <strong>Data Science</strong>, <strong>Machine Learning</strong>
-        und <strong>künstliche Intelligenz</strong> in reale Holzbau-Prozesse –
+  <!-- HERO (voller Screen) -->
+  <section class="hero" aria-label="Hero">
+    <div class="hero-inner">
+      <div class="pill"><span class="dot"></span> Holzbau × KI • LignoAI</div>
+      <h1><span class="ligno">Ligno</span>AI Engineering</h1>
+      <p>
+        Wir bringen <strong>Data Science</strong>, <strong>Machine Learning</strong> und
+        <strong>künstliche Intelligenz</strong> in reale Holzbau-Prozesse –
         pragmatisch, nachvollziehbar und messbar.
       </p>
 
-      <div class="grid">
-        <div class="card">
-          <h3>Use-Case Design</h3>
-          <p>
-            Klare Problemdefinition, Datenbedarf, Nutzenabschätzung
-            und strukturierte PoC-Roadmap.
-          </p>
-        </div>
+      <div class="hero-actions">
+        <a class="btn primary" href="contact.html">Projekt anfragen</a>
+        <a class="btn ghost" href="#services">Services</a>
+      </div>
+    </div>
 
-        <div class="card">
-          <h3>Daten & Modelle</h3>
-          <p>
-            Vision, Forecasting und Optimierung mit sauberer
-            Evaluation und Dokumentation.
-          </p>
-        </div>
+    <div class="scrollhint">Scroll ↓</div>
+  </section>
 
-        <div class="card">
-          <h3>Integration</h3>
-          <p>
-            Einbindung in bestehende Tools, Workflows,
-            Dashboards und Schnittstellen.
-          </p>
-        </div>
+  <!-- CONTENT (kommt nach dem Hero) -->
+  <main class="content">
 
-        <div class="card">
-          <h3>Betrieb</h3>
-          <p>
-            Monitoring, Versionierung und Qualitätssicherung
-            für produktive AI-Systeme.
-          </p>
+    <section id="services" class="section">
+      <div class="wrap">
+        <h2>Services</h2>
+        <p class="sub">Modular – klein starten (PoC) und später skalieren.</p>
+
+        <div class="grid">
+          <article class="card">
+            <h3>Use-Case Design</h3>
+            <p>Problemdefinition, Datenbedarf, Nutzenabschätzung und PoC-Roadmap.</p>
+          </article>
+          <article class="card">
+            <h3>Daten & Modelle</h3>
+            <p>Vision, Forecasting, Optimierung – mit sauberer Evaluation & Dokumentation.</p>
+          </article>
+          <article class="card">
+            <h3>Integration</h3>
+            <p>AI in Prozesse bringen: Tools, Reporting, Workflows, Schnittstellen.</p>
+          </article>
+          <article class="card">
+            <h3>Betrieb</h3>
+            <p>Monitoring, Versionierung, Nachvollziehbarkeit & Qualitätssicherung.</p>
+          </article>
         </div>
       </div>
+    </section>
 
-      <h2>Warum LignoAI?</h2>
-      <p>
-        Der Holzbau erzeugt mehr Daten als oft angenommen
-        (BIM/CAD, Fertigungsdaten, Sensorik, Prüfprotokolle).
-        LignoAI Engineering übersetzt diese Daten in robuste
-        Entscheidungen und effizientere Prozesse.
-      </p>
+    <section class="section">
+      <div class="wrap">
+        <h2>Warum LignoAI?</h2>
+        <p>
+          Der Holzbau erzeugt mehr Daten als oft angenommen (BIM/CAD, Fertigungsdaten, Sensorik, Prüfprotokolle).
+          LignoAI Engineering übersetzt diese Daten in robuste Entscheidungen und effizientere Prozesse.
+        </p>
+      </div>
+    </section>
 
-      <h2>Zusammenarbeit</h2>
-      <p>
-        Wir starten bewusst klein: ein klar abgegrenzter Use-Case,
-        ein funktionierender Prototyp – und skalieren nur,
-        wenn der Mehrwert eindeutig ist.
-      </p>
+    <section class="section">
+      <div class="wrap">
+        <h2>Nächster Schritt</h2>
+        <p>
+          Du hast einen Prozess, der zu viel Zeit kostet, zu viel Ausschuss produziert oder schwer vorhersehbar ist?
+          Dann starten wir mit einem kleinen PoC und skalieren nur, wenn der Nutzen stimmt.
+        </p>
+        <a class="btn primary" href="contact.html">Kontakt aufnehmen</a>
+      </div>
+    </section>
 
-      <p>
-        <a class="navlinks cta" href="contact.html" style="display:inline-block;">
-          Projekt anfragen
-        </a>
-      </p>
+    <!-- Bottom Glow Zone (grün, xAI-style) -->
+    <section class="glow-end" aria-hidden="true"></section>
 
-    </main>
-  </div>
+  </main>
 
-  <!-- ================= FOOTER ================= -->
   <footer class="footer">
-    © <span id="year"></span> LignoAI Engineering · Holzbau × AI
+    © <span id="y"></span> LignoAI Engineering
   </footer>
 
   <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
+    document.getElementById("y").textContent = new Date().getFullYear();
   </script>
-  <script src="script.js"></script>
-
 </body>
 </html>
