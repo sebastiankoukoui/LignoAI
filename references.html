@@ -6,54 +6,37 @@
   <title>References – LignoAI Engineering</title>
   <link rel="stylesheet" href="style.css" />
 </head>
-<body>
-  <header class="header">
-    <div class="navbar">
+
+<body style="--glowTop: rgba(255,255,255,.14); --glowBottom: rgba(34,197,94,.55);">
+  <header class="topbar">
+    <div class="nav">
       <a class="brand" href="index.html"><span class="ligno">Ligno</span><span class="rest">AI Engineering</span></a>
-      <nav class="navlinks">
-        <a data-nav href="index.html">Home</a>
-        <a data-nav href="about.html">Über uns</a>
-        <a data-nav href="references.html">References</a>
-        <a data-nav class="cta" href="contact.html">Kontakt</a>
+      <nav class="links">
+        <a href="index.html">Home</a>
+        <a href="about.html">Über uns</a>
+        <a class="active" href="references.html">References</a>
+        <a class="cta" href="contact.html">Kontakt</a>
       </nav>
-      <button class="burger" data-burger aria-label="Menü öffnen">☰</button>
-    </div>
-    <div class="mobile" data-mobile>
-      <a data-nav href="index.html">Home</a>
-      <a data-nav href="about.html">Über uns</a>
-      <a data-nav href="references.html">References</a>
-      <a data-nav href="contact.html">Kontakt</a>
     </div>
   </header>
 
-  <div class="shell">
-    <aside class="sticky">
-      <div class="visual">
-        <div class="visual-top"><div class="pill"><span class="dot"></span> References</div></div>
-        <div class="visual-img"><img src="assets/hero.jpg" alt="Visual" /></div>
-        <div class="visual-bottom">Hier kommen Projekte, PoCs und Case-Studies rein.</div>
-      </div>
-    </aside>
+  <main class="content" style="padding-top:72px;">
+    <section class="section">
+      <div class="wrap">
+        <h2>References</h2>
+        <p class="sub">Hier kommen Projekte, PoCs und Case-Studies rein.</p>
 
-    <main class="content">
-      <h1>References</h1>
-      <p>Trag hier später deine Projekte ein (Uni-Projekte, PoCs, Prototypen, Demos).</p>
-
-      <div class="grid">
-        <div class="card">
-          <h3>Projekt 1 (Platzhalter)</h3>
-          <p>Kurzer Satz: Problem → Ansatz → Resultat (messbar).</p>
-        </div>
-        <div class="card">
-          <h3>Projekt 2 (Platzhalter)</h3>
-          <p>Was wurde optimiert? Zeit, Qualität, Materialeffizienz etc.</p>
+        <div class="grid">
+          <div class="card"><h3>Projekt 1</h3><p>Problem → Ansatz → Resultat (messbar).</p></div>
+          <div class="card"><h3>Projekt 2</h3><p>Planung/Fertigung/Qualität: was wurde verbessert?</p></div>
         </div>
       </div>
-    </main>
-  </div>
+    </section>
+
+    <section class="glow-end" aria-hidden="true"></section>
+  </main>
 
   <footer class="footer">© <span id="y"></span> LignoAI Engineering</footer>
   <script>document.getElementById("y").textContent=new Date().getFullYear();</script>
-  <script src="script.js"></script>
 </body>
 </html>
