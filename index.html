@@ -2,145 +2,160 @@
 <html lang="de">
 <head>
   <meta charset="utf-8" />
+
+  <!-- Google Search Console verification (WICHTIG: drin lassen) -->
   <meta name="google-site-verification" content="toAgicao6RYTk-eDJDxdQ3fNRhYl8EZesVz8OhebC98" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>LignoAI Engineering</title>
-  <meta name="description" content="Implementierung von AI-Lösungen für die Holzbaubranche – von Daten bis Deployment." />
+
+  <title>LignoAI Engineering – AI im Holzbau</title>
+
+  <meta name="description"
+        content="LignoAI Engineering: Umsetzung von AI-Lösungen für Holzbau & Holzingenieurwesen – von Datenaufbereitung bis Integration in reale Prozesse." />
+
   <meta name="robots" content="index, follow" />
+
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-  <header class="nav">
-    <div class="container nav-inner">
-      <a class="brand" href="#top" aria-label="LignoAI Engineering">
-        <span class="brand-ligno">Ligno</span><span class="brand-rest">AI Engineering</span>
+
+  <!-- ================= HEADER / NAV ================= -->
+  <header class="header">
+    <div class="navbar">
+      <a class="brand" href="index.html">
+        <span class="ligno">Ligno</span><span class="rest">AI Engineering</span>
       </a>
 
-      <nav class="menu">
-        <a href="#services">Services</a>
-        <a href="#about">Über</a>
-        <a href="#cases">Use-Cases</a>
-        <a class="cta" href="#contact">Kontakt</a>
+      <nav class="navlinks">
+        <a data-nav href="index.html">Home</a>
+        <a data-nav href="about.html">Über uns</a>
+        <a data-nav href="references.html">References</a>
+        <a data-nav class="cta" href="contact.html">Kontakt</a>
       </nav>
+
+      <button class="burger" data-burger aria-label="Menü öffnen">☰</button>
+    </div>
+
+    <!-- Mobile menu -->
+    <div class="mobile" data-mobile>
+      <a data-nav href="index.html">Home</a>
+      <a data-nav href="about.html">Über uns</a>
+      <a data-nav href="references.html">References</a>
+      <a data-nav href="contact.html">Kontakt</a>
     </div>
   </header>
 
-  <main id="top">
-    <section class="hero">
-      <div class="container hero-grid">
-        <div class="hero-text">
-          <div class="pill">Holzbau × KI • LignoAI</div>
-          <h1><span class="brand-ligno">Ligno</span><span class="brand-rest">AI Engineering</span></h1>
-          <p class="lead">
-            Implementierung von <strong>AI</strong> in der Holzbaubranche: von Datenaufbereitung über Modellierung bis zur
-            <strong>Integration</strong> in Planung, Produktion und Qualitätssicherung.
+  <!-- ================= MAIN LAYOUT ================= -->
+  <div class="shell">
+
+    <!-- ===== Sticky Visual (bleibt beim Scrollen stehen) ===== -->
+    <aside class="sticky">
+      <div class="visual">
+
+        <div class="visual-top">
+          <div class="pill">
+            <span class="dot"></span>
+            Holzbau × KI • LignoAI
+          </div>
+        </div>
+
+        <div class="visual-img">
+          <!-- Ersetze hero.jpg später durch dein Wunschbild -->
+          <img src="assets/hero.jpg" alt="LignoAI Engineering – AI im Holzbau" />
+        </div>
+
+        <div class="visual-bottom">
+          <strong style="color: rgba(255,255,255,.9);">
+            AI-Engineering für den Holzbau
+          </strong><br/>
+          Von Datenaufbereitung über Modellierung bis zur Integration in Planung,
+          Produktion und Qualitätssicherung.
+        </div>
+
+      </div>
+    </aside>
+
+    <!-- ===== Scroll-Content rechts ===== -->
+    <main class="content">
+
+      <h1>
+        <span style="color: var(--green);">Ligno</span>AI Engineering
+      </h1>
+
+      <p class="kicker">
+        Wir bringen <strong>Data Science</strong>, <strong>Machine Learning</strong>
+        und <strong>künstliche Intelligenz</strong> in reale Holzbau-Prozesse –
+        pragmatisch, nachvollziehbar und messbar.
+      </p>
+
+      <div class="grid">
+        <div class="card">
+          <h3>Use-Case Design</h3>
+          <p>
+            Klare Problemdefinition, Datenbedarf, Nutzenabschätzung
+            und strukturierte PoC-Roadmap.
           </p>
-          <div class="hero-actions">
-            <a class="btn primary" href="#contact">Projekt anfragen</a>
-            <a class="btn ghost" href="#services">Was wir machen</a>
-          </div>
         </div>
 
-        <div class="hero-card" aria-hidden="true">
-          <div class="card">
-            <div class="card-head">
-              <span class="card-title">LignoAI • Pipeline</span>
-            </div>
-            <div class="card-body">
-              <div class="step"><span>1</span> Daten (BIM/CAD, Sensorik, Produktion)</div>
-              <div class="step"><span>2</span> Modelle (Vision, Forecasting, Optimierung)</div>
-              <div class="step"><span>3</span> Integration (Tools, Dashboards)</div>
-              <div class="step"><span>4</span> Betrieb (Monitoring, Versionierung)</div>
-            </div>
-          </div>
+        <div class="card">
+          <h3>Daten & Modelle</h3>
+          <p>
+            Vision, Forecasting und Optimierung mit sauberer
+            Evaluation und Dokumentation.
+          </p>
         </div>
-      </div>
-    </section>
 
-    <section id="services" class="section">
-      <div class="container">
-        <h2>Services</h2>
-        <p class="sub">Modular – klein starten (PoC) und später skalieren.</p>
+        <div class="card">
+          <h3>Integration</h3>
+          <p>
+            Einbindung in bestehende Tools, Workflows,
+            Dashboards und Schnittstellen.
+          </p>
+        </div>
 
-        <div class="grid3">
-          <article class="tile">
-            <h3>Use-Case Design</h3>
-            <p>Problemdefinition, Datenbedarf und Nutzenabschätzung.</p>
-          </article>
-          <article class="tile">
-            <h3>Daten & Modellierung</h3>
-            <p>Datenpipeline, Training, Evaluation, Dokumentation.</p>
-          </article>
-          <article class="tile">
-            <h3>Integration</h3>
-            <p>AI in Prozesse bringen: Tools, Reporting, Monitoring.</p>
-          </article>
+        <div class="card">
+          <h3>Betrieb</h3>
+          <p>
+            Monitoring, Versionierung und Qualitätssicherung
+            für produktive AI-Systeme.
+          </p>
         </div>
       </div>
-    </section>
 
-   <section id="about" class="section alt">
-  <div class="container about-grid">
-    <div class="about-image">
-      <img src="sebastian.jpg" alt="Sebastian Koukoui – LignoAI Engineering" />
-    </div>
+      <h2>Warum LignoAI?</h2>
+      <p>
+        Der Holzbau erzeugt mehr Daten als oft angenommen
+        (BIM/CAD, Fertigungsdaten, Sensorik, Prüfprotokolle).
+        LignoAI Engineering übersetzt diese Daten in robuste
+        Entscheidungen und effizientere Prozesse.
+      </p>
 
-    <div class="about-text">
-      <h2>Über mich</h2>
+      <h2>Zusammenarbeit</h2>
       <p>
-        Ich bin <strong>Sebastian Koukoui</strong>, 23 Jahre alt,
-        gelernter <strong>Zimmermann EFZ</strong> und
-        <strong>Bachelor-Student in Holztechnik</strong>.
+        Wir starten bewusst klein: ein klar abgegrenzter Use-Case,
+        ein funktionierender Prototyp – und skalieren nur,
+        wenn der Mehrwert eindeutig ist.
       </p>
+
       <p>
-        Mein Fokus liegt auf der Verbindung von Holzbau-Engineering
-        mit <strong>Data Science, Machine Learning</strong> und
-        <strong>künstlicher Intelligenz</strong>.
-        Besonders interessiert mich, wie datenbasierte Methoden
-        Planung, Produktion und Qualitätssicherung im Holzbau
-        effizienter gestalten können.
+        <a class="navlinks cta" href="contact.html" style="display:inline-block;">
+          Projekt anfragen
+        </a>
       </p>
-      <p>
-        Mit <strong>LignoAI Engineering</strong> verbinde ich
-        praktische Erfahrung aus dem Holzbau mit modernen
-        AI-Technologien, um praxisnahe und umsetzbare Lösungen
-        für die Branche zu entwickeln.
-      </p>
-      <p class="about-meta">
-        Zimmermann EFZ · BSc Holztechnik · Data Science & AI · Sportenthusiast
-      </p>
-    </div>
+
+    </main>
   </div>
-</section>
 
-    <section id="cases" class="section">
-      <div class="container">
-        <h2>Use-Cases</h2>
-        <div class="grid2">
-          <div class="case"><h3>Qualitätssicherung (Vision)</h3><p>Fehler/Abweichungen über Bilder/Scans erkennen.</p></div>
-          <div class="case"><h3>Materialeffizienz</h3><p>Verschnitt senken, Planung/Fertigung optimieren.</p></div>
-        </div>
-      </div>
-    </section>
-
-    <section id="contact" class="section contact">
-      <div class="container contact-box">
-        <div>
-          <h2>Kontakt</h2>
-          <p class="sub">Schreib mir kurz, worum es geht.</p>
-          <a class="btn primary" href="mailto:hello@lignoai.engineering">hello@lignoai.engineering</a>
-        </div>
-      </div>
-    </section>
-  </main>
-
+  <!-- ================= FOOTER ================= -->
   <footer class="footer">
-    <div class="container footer-inner">
-      <div><span class="brand-ligno">Ligno</span><span class="brand-rest">AI</span></div>
-    </div>
+    © <span id="year"></span> LignoAI Engineering · Holzbau × AI
   </footer>
 
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
   <script src="script.js"></script>
+
 </body>
 </html>
