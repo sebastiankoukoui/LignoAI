@@ -254,6 +254,10 @@ body.page .content{
   background: transparent;
   box-shadow: none;
 }
+/* Page Intro höher positionieren (zieht Text in den Glow) */
+body.page .page-intro{
+  margin-top: -120px;
+}
 
 /* Standard Sections: wie bisher */
 body.page .section{
