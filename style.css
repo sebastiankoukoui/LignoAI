@@ -34,28 +34,35 @@ body.has-hero::before{
 }
 
 /* ===== Top Glow (xAI-like) ===== */
+/* Default "Vignette" / dunkler Verlauf (für alle Seiten ok) */
 body::after{
   content:"";
   position:fixed;
+  inset:0;
+  pointer-events:none;
+  background: linear-gradient(180deg, rgba(0,0,0,.55), rgba(0,0,0,.88));
+  z-index:-2;
+}
+
+/* TOP GLOW – nur auf Unterseiten */
+body.page::before{
+  content:"";
+  position:fixed;
   left:0; right:0;
-  top:var(--topbarH, 72px);
+  top:72px;           /* direkt unter Topbar */
   height:55vh;
   pointer-events:none;
 
-  /* nur Glow, kein "dunkles" Overlay mehr */
   background:
     radial-gradient(1200px 650px at 50% 0%, var(--glowTop), transparent 62%),
     radial-gradient(900px 520px at 20% 0%, color-mix(in srgb, var(--glowTop) 55%, transparent), transparent 70%),
     radial-gradient(900px 520px at 80% 0%, color-mix(in srgb, var(--glowTop) 55%, transparent), transparent 70%);
 
-  /* weich nach unten ausfaden */
   -webkit-mask-image: linear-gradient(to bottom, #000 0%, rgba(0,0,0,.85) 35%, transparent 78%);
   mask-image: linear-gradient(to bottom, #000 0%, rgba(0,0,0,.85) 35%, transparent 78%);
 
-  z-index:0; /* unter Content, über body background */
+  z-index:-1;         /* über dem Body-Background, unter Content */
 }
-
-
 
 /* ===== Topbar ===== */
 .topbar{
