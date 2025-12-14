@@ -62,7 +62,10 @@ body::after{
 body.page .content::before{
   content:"";
   display:block;
-  height:55vh;
+
+  /* 🔑 das ist der Fix */
+  margin-top:-72px;
+  height:calc(55vh + 72px);
 
   background:
     radial-gradient(1200px 650px at 50% 0%, var(--glowTop), transparent 62%),
@@ -72,6 +75,7 @@ body.page .content::before{
   -webkit-mask-image: linear-gradient(to bottom, #000 0%, rgba(0,0,0,.85) 35%, transparent 78%);
   mask-image: linear-gradient(to bottom, #000 0%, rgba(0,0,0,.85) 35%, transparent 78%);
 }
+
 
 
 /* ===== Topbar ===== */
