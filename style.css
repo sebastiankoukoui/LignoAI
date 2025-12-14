@@ -38,11 +38,16 @@ body::after{
   position:fixed;
   inset:0;
   height:100vh;
+  pointer-events:none;
+
+  /* zentriert & oben wie xAI */
   background:
-    radial-gradient(900px 600px at 30% 15%, var(--glowTop), transparent 60%),
+    radial-gradient(1200px 700px at 50% 0%, var(--glowTop), transparent 62%),
     linear-gradient(180deg, rgba(0,0,0,.62), rgba(0,0,0,.86));
+
   z-index:-2;
 }
+
 
 /* ===== Topbar ===== */
 .topbar{
