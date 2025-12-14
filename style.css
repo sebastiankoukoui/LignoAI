@@ -168,6 +168,19 @@ body.page::before{
   color:rgba(255,255,255,.55);
   font-size:.95rem;
 }
+/* =========================
+   Contact page – blaue Buttons
+   ========================= */
+
+body.contact .btn.primary {
+  background: #3b82f6;      /* Blau */
+  border-color: #3b82f6;
+}
+
+body.contact .btn.primary:hover {
+  background: #2563eb;      /* dunkleres Blau */
+  border-color: #2563eb;
+}
 
 /* ===== Content layer ===== */
 .content{
