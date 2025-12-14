@@ -33,20 +33,28 @@ body.has-hero::before{
   z-index:-3;
 }
 
+/* ===== Top Glow (xAI-like) ===== */
 body::after{
   content:"";
   position:fixed;
-  inset:0;
-  height:100vh;
+  left:0; right:0;
+  top:var(--topbarH, 72px);
+  height:55vh;
   pointer-events:none;
 
-  /* zentriert & oben wie xAI */
+  /* nur Glow, kein "dunkles" Overlay mehr */
   background:
-    radial-gradient(1200px 700px at 50% 0%, var(--glowTop), transparent 62%),
-    linear-gradient(180deg, rgba(0,0,0,.62), rgba(0,0,0,.86));
+    radial-gradient(1200px 650px at 50% 0%, var(--glowTop), transparent 62%),
+    radial-gradient(900px 520px at 20% 0%, color-mix(in srgb, var(--glowTop) 55%, transparent), transparent 70%),
+    radial-gradient(900px 520px at 80% 0%, color-mix(in srgb, var(--glowTop) 55%, transparent), transparent 70%);
 
-  z-index:-2;
+  /* weich nach unten ausfaden */
+  -webkit-mask-image: linear-gradient(to bottom, #000 0%, rgba(0,0,0,.85) 35%, transparent 78%);
+  mask-image: linear-gradient(to bottom, #000 0%, rgba(0,0,0,.85) 35%, transparent 78%);
+
+  z-index:0; /* unter Content, über body background */
 }
+
 
 
 /* ===== Topbar ===== */
