@@ -156,6 +156,16 @@ body::after{
   background: var(--bg);
   box-shadow: 0 -40px 80px rgba(0,0,0,.8);
 }
+/* Unterseiten: oben etwas transparent, damit Top-Glow sichtbar bleibt */
+body.page .content{
+  background: transparent;
+  box-shadow: none;
+}
+
+/* und statt dem Background auf content setzen wir ihn auf Sections */
+body.page .section{
+  background: var(--bg);
+}
 
 .section{
   padding:68px 0;
